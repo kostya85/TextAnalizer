@@ -45,6 +45,8 @@ namespace TextAnalizer
         {
             metrics = new List<IMetric>();
             if (GlasAnalyse.IsChecked == true) metrics.Add(new GlasMetric());
+            if (SoglasAnalyse.IsChecked == true) metrics.Add(new SoglasMetric());
+            if (WordsCountAnalyse.IsChecked == true) metrics.Add(new WordsCountMetric());
         }
     }
 }

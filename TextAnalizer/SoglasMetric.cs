@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace TextAnalizer
 {
-    class GlasMetric : IMetric
+    class SoglasMetric : IMetric
     {
-        public static char[] alphabet = "аееиоуыэюя".ToCharArray();
         private string _info;
         public string Info { get => _info; set => _info=value; }
 
@@ -17,9 +16,13 @@ namespace TextAnalizer
             int count = 0;
             foreach(var e in content.Content.ToString())
             {
-                if (alphabet.Contains(char.ToLower(e))) count++;
+                if (!GlasMetric.alphabet.Contains(char.ToLower(e)))
+                {
+                    count++;
+                }
+
             }
-            Info = "Количество гласных букв: " + count + ";\n" ;
+            Info = "Количество согласных букв: " + count + ";\n";
             return Task.CompletedTask;
         }
     }

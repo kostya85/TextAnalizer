@@ -14,6 +14,8 @@
         <Label x:Name="label" Content="Доступные метрики" HorizontalAlignment="Left" Margin="34,233,0,0" VerticalAlignment="Top" Width="141"/>
         <Label x:Name="label_Copy" Content="Результат анализа" HorizontalAlignment="Left" Margin="636,233,0,0" VerticalAlignment="Top" Width="115"/>
         <Button x:Name="Analyse" Content="Анализировать" HorizontalAlignment="Left" Margin="675,199,0,0" VerticalAlignment="Top" Width="107" Height="27" Click="Analyse_Click"/>
-        <TextBlock x:Name="Result" HorizontalAlignment="Left" Margin="611,264,0,0" TextWrapping="Wrap" Text="Здесь будет результат" VerticalAlignment="Top" Width="171" Height="147"/>
+        <TextBlock x:Name="Result" HorizontalAlignment="Left" Margin="513,264,0,0" TextWrapping="Wrap" Text="Здесь будет результат" VerticalAlignment="Top" Width="269" Height="147"/>
+        <CheckBox x:Name="WordsCountAnalyse" Content="Количество слов" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Height="16" Width="165"/>
+        <CheckBox x:Name="SoglasAnalyse" Content="Количество согласных букв" HorizontalAlignment="Left" Margin="10,306,0,0" VerticalAlignment="Top" Height="16" Width="177"/>
     </Grid>
 </Window>

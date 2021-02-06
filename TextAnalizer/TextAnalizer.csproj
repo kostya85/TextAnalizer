@@ -57,8 +57,10 @@
     </ApplicationDefinition>
     <Compile Include="IMetric.cs" />
     <Compile Include="GlasMetric.cs" />
+    <Compile Include="SoglasMetric.cs" />
     <Compile Include="StringText.cs" />
     <Compile Include="TXText.cs" />
+    <Compile Include="WordsCountMetric.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
